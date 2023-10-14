@@ -1,0 +1,173 @@
+@font-face {
+    font-family: A;
+    src: url(Brolink-DEMO.ttf);
+}
+@font-face {
+    font-family: B;
+    src: url(FontsFree-Net-Azonix.ttf);
+}
+@font-face {
+    font-family: C;
+    src: url(Relieve.ttf);
+}
+@font-face {
+    font-family: D;
+    src: url(ShadowHand.ttf);
+}
+@font-face {
+    font-family: E;
+    src: url(Venus-Plant.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+   /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 2vw;
+    border-bottom: 3px solid white;
+    overflow: hidden;
+}
+
+#nav h3{
+    font-family: B;
+    font-size: 30px;  
+}
+
+#nav h3 span{
+    margin: 0 10px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.1px hotpink;
+    color: transparent;
+}
+
+#cen-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+#cen-nav li{
+    list-style: none;
+}
+
+#cen-nav li a{
+    font-family: A;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#cen-nav li a:hover{
+    font-size: 15px;
+}
+
+#nav button{
+    background-color: white;
+    font-family: A; 
+    height: 5vh;
+    width: 12vw;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px; 
+    
+}
+
+#nav button:hover{
+    box-shadow: 0 0 25px hotpink,0 0 25px hotpink;
+}
+
+#center{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    padding: 3vh 3vw;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#left h1{
+    position: absolute;
+    top: 35%;
+    font-family: A;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#left h1 #name{
+    font-family: C;
+    font-size: 45px;
+    color: hotpink;
+}
+#left h1 #element{
+    color: hotpink;
+    font-family: E;
+    margin: 0 25px;
+}
+
+
+#right{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 4vw;
+    width: 50%;
+    overflow: hidden;
+}
+
+#right #img-box{
+    position: absolute;
+    height: 100vh;
+    width: 25vw;
+}
+
+#right #img-box img{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    object-fit: cover;
+    transition: all ease 1.2s;
+}
+
+#right #img-box:hover img{
+    scale: 1.2;
+}
+
+@media (min-width: 300px){
+    #main{
+        display:flex;
+        flex-direction:column;
+    }
+}

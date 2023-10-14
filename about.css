@@ -1,0 +1,192 @@
+@font-face {
+    font-family: A;
+    src: url(Brolink-DEMO.ttf);
+}
+@font-face {
+    font-family: B;
+    src: url(FontsFree-Net-Azonix.ttf);
+}
+@font-face {
+    font-family: C;
+    src: url(Relieve.ttf);
+}
+@font-face {
+    font-family: D;
+    src: url(ShadowHand.ttf);
+}
+@font-face {
+    font-family: E;
+    src: url(Venus-Plant.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+   /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 2vw;
+    border-bottom: 3px solid white;
+    overflow: hidden;
+}
+
+#nav h3{
+    font-family: B;
+    font-size: 30px;  
+}
+
+#nav h3 span{
+    font-weight: bolder;
+    -webkit-text-stroke: 0.1px hotpink;
+    color: transparent;
+    margin: 0 10px;
+}
+
+#cen-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+#cen-nav li{
+    list-style: none;
+}
+
+#cen-nav li a{
+    font-family: A;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#cen-nav li a:hover{
+    font-size: 15px;
+}
+
+#nav button{
+    background-color: white;
+    font-family: A; 
+    height: 5vh;
+    width: 12vw;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px; 
+    
+}
+
+#nav button:hover{
+    box-shadow: 0 0 25px hotpink,0 0 25px hotpink;
+}
+
+#center{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#left #img-box{
+    position: absolute;
+    height: 100vh;
+    width: 25vw;
+}
+#left #img-box img{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    object-fit: cover;
+    transition: all ease 1.2s;
+}
+
+#left #img-box:hover img{
+    scale: 1.2;
+}
+
+
+#right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    position: relative;
+
+}
+
+#right h1{
+    position: absolute;
+    top: 30%;
+    font-family: B;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+#right h1 span{
+    color: hotpink;
+}
+
+#right p{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: start;
+    margin: 0 2.5vw;
+}
+#right #icon{
+    position: absolute;
+    top: 50%;
+}
+
+#right #icon{
+    height: 8vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right #icon a{
+    text-decoration: none;
+}
+
+#right #icon i{
+    margin: 4vh 0;
+    font-size: 30px;
+    color: hotpink;
+}

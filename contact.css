@@ -1,0 +1,274 @@
+@font-face {
+    font-family: A;
+    src: url(Brolink-DEMO.ttf);
+}
+@font-face {
+    font-family: B;
+    src: url(FontsFree-Net-Azonix.ttf);
+}
+@font-face {
+    font-family: C;
+    src: url(Relieve.ttf);
+}
+@font-face {
+    font-family: D;
+    src: url(ShadowHand.ttf);
+}
+@font-face {
+    font-family: E;
+    src: url(Venus-Plant.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+   /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 2vw;
+    border-bottom: 3px solid white;
+    overflow: hidden;
+}
+
+#nav h3{
+    font-family: B;
+    font-size: 30px;  
+}
+
+#nav h3 span{
+    font-weight: bolder;
+    -webkit-text-stroke: 0.1px hotpink;
+    color: transparent;
+    margin: 0 10px;
+}
+
+#cen-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+#cen-nav li{
+    list-style: none;
+}
+
+#cen-nav li a{
+    font-family: A;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#cen-nav li a:hover{
+    font-size: 15px;
+}
+
+#nav button{
+    background-color: white;
+    font-family: A; 
+    height: 5vh;
+    width: 12vw;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px; 
+    
+}
+
+#nav button:hover{
+    box-shadow: 0 0 25px hotpink,0 0 25px hotpink;
+}
+
+#center{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+#left{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid white;
+}
+
+#left-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-box h1{
+    color: hotpink;
+    text-align: center;
+    font-family: A;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+}
+
+#left-box p{
+    text-align: center;
+    margin-bottom: 6vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 0 2vw;
+}
+
+#left-box #low{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-box #low i{
+    display: inline;
+    margin: 2vh 3vw;
+    font-size: 30px;
+    color: hotpink;
+}
+
+#left-box #low p{
+    margin: 2vh 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#right{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+#right-box{
+    height: 60vh;
+    width: 100%;
+}
+
+#right-box h1{
+    font-family: A;
+    text-align: center;
+    margin: 4vh 0; 
+}
+
+#right-box #input-box #first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#right-box #input-box #sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#right-box #input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#name{
+    margin:3vh 8vw;
+    height: 6vh;
+    width: 12vw;
+    padding: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border: none;
+    border-bottom: 0.1px solid white;
+    color: white;
+}
+
+#f-name{
+    margin:3vh 8vw;
+    height: 6vh;
+    width: 12vw;
+    padding: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border: none;
+    border-bottom: 0.1px solid white;
+    color: white;
+}
+
+#c-name{
+    margin:3vh 8vw;
+    height: 6vh;
+    width: 12vw;
+    padding: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border: none;
+    border-bottom: 0.1px solid white;
+    color: white;
+}
+
+#email{
+    height: 6vh;
+    margin:3vh 8vw;
+    width: 12vw;
+    padding: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border: none;
+    border-bottom: 0.1px solid white;
+    color: white;
+}
+
+#message{
+    margin:3vh 8vw;
+    height: 20vh;
+    width: 40vw;
+    padding: 10px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border: none;
+    border-bottom: 0.1px solid white;
+    color: white;
+}
+
+#right-box #input-box button{
+    background-color: white;
+    font-family: A; 
+    height: 5vh;
+    width: 12vw;
+    color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+#right-box #input-box button:hover{
+    box-shadow: 0 0 25px hotpink,0 0 25px hotpink;
+}
+
